@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emmet语法</title>
+</head>
+<!--
+    emmet语法:
+        作用: 通过简写语法, 快速生成代码
+        语法:
+            类似于选择器的写法:
+            1. 标签名 ==> div ==> <div></div>
+            2. 类选择器 ==> .red ==> <div class="red"></div>
+            3. id选择器 ==> #one ==> <div id="one"></div>
+            4. 交集选择器 ==> p.red#one ==> <p class="red" id="one"></p>
+            5. 子代选择器 ==> ul>li ==> <ul><li></li></ul>
+            6. 内部文本 ==> ul>li{我是li的内容} ==> <ul><li>我是li的内容</li></ul>
+            7. 创建多个 ==> ul>li*3 ==> <ul><li></li><li></li><li></li></ul>
+-->
+<body>
+    <div>emmet语法创建div标签</div>
+    <div class="red">emmet语法创建类名为red的div标签</div>
+    <div id="one">emmet语法创建id为one的div标签</div>
+    <p class="red" id="two">emmet语法创建类名为red, id为two的p标签</p>
+    <ul>
+        <li>emmet语法创建ul>li无序列表</li>
+    </ul>
+    <ul>
+        <li>我是emmet语法创建的无序列表</li>
+    </ul>
+    <ul>
+        <li>无序列表第一行</li>
+        <li>无序列表第二行</li>
+        <li>无序列表第三行</li>
+    </ul>
+</body>
+</html>

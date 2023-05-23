@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>字体相关样式</title>
+    <style>
+        p {
+            /* 设置文字大小为30px */
+            font-size: 30px;
+            /* 设置文字加粗 */
+            font-weight: 700;
+            /* 设置字体倾斜 */
+            font-style: italic;
+            /* 设置字体为微软雅黑 */
+            font-family: 微软雅黑;
+            /* 属性连写设置字体属性 */
+            font: italic 700 50px 微软雅黑;
+            color: blue;
+        }
+    </style>
+</head>
+<!--
+    字体样式:
+        1. 字体大小 ==> font-size:
+            属性名: font-size
+            取值: 数字 + px
+            注意点:
+                a. 谷歌浏览器默认文字大小是 16px
+                b. 单位 'px' 需要设置, 否则无效
+        2. 字体粗细 ==> font-weight:
+            属性名: font-weight
+            取值方式:
+                a. 关键字取值:
+                    正常 ==> normal
+                    加粗 ==> bold
+                b. 纯数字取值 ==> 100~900的整数
+                    正常 ==> 400
+                    加粗 ==> 700
+            注意点:
+                a. 不是所有字体都提供了9种粗细, 因此部分取值页面中无变化
+                b. 实际开发中以正常、加粗两种使用最多
+        3. 字体样式 ==> font-style:
+            属性名: font-style
+            取值:
+                正常(默认值) ==> normal
+                倾斜 ==> italic
+        4. 字体类型 ==> font-family:
+            属性名: font-family
+            常见取值:
+                具体字体: "Microsoft YaHei", 微软雅黑, 黑体, 宋体, 楷体等
+                字体系列: sans-serif, serif, monospace等
+            渲染规则:
+                a. 从左往右按顺序查找, 如果电脑未安装该字体, 则显示下一个字体
+                b. 如果所选字体均不支持, 会根据操作系统来限制默认字体
+                    Windows 默认字体 ==> 微软雅黑
+                    macOS 默认字体 ==> 苹方
+            注意点:
+                a. 如果字体名称中存在多个单词, 推荐使用引号包裹
+                b. 最后一项字体系列不需要引号包裹
+                c. 网页开发时, 尽量使用系统常见自带字体, 保证不同用户浏览网页都可以正确显示
+            常见字体系列:
+                无衬线字体 ==> sans-serif:
+                    特点: 文字笔画粗细均匀, 并且首尾无装饰
+                    场景: 网页中大多采用无衬线字体
+                    该系列常见字体: 黑体, Arial
+                衬线字体 ==> serif:
+                    特点: 文字笔画粗细不均, 并且首尾有笔锋装饰
+                    场景: 报刊书籍应用广泛
+                    常见该系列字体: 宋体, Times New Roman
+                等宽字体 ==> monospace:
+                    特点: 每个字母或文字的宽度相等
+                    场景: 一般用于程序代码编写, 有利于代码的阅读和编写
+                    常见该系列字体: Consolas, fira code
+        5. 字体类型 ==> font属性连写:
+            属性名: font: 复合属性
+            取值方式:
+                font: style weight size family;
+            省略要求: 只能省略前两个, 如果省略了相当于设置了默认值
+-->
+
+<body>
+    <p>这是一个被设置了文字样式的p标签~~</p>
+</body>
+
+</html>

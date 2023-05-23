@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表标签</title>
+</head>
+<!--
+    列表标签:
+        使用场景: 实现网页中列表结构的搭建, 按行显示关联性的内容, 如新闻列表, 排行榜, 账单等
+        特点: 按照行的方式, 整齐的显示内容
+        1. 无序列表 ==> 不显示内容序号
+            在网页中用来显示一组无顺序之分的列表
+            标签组成:
+                <ul></ul> ==> 表示无序列表整体, 用来包裹li标签
+                <li></li> ==> 表示列表的每一项, 代表一行内容
+                显示特点 ==> 列表的每一项前都默认有一个 '●' 标识
+                注意点:
+                    a. ul标签中只允许包含li标签
+                    b. li标签可以包含任意内容
+        2. 有序列表 ==> 显示内容排序序号
+            在网页中显示一组有明确顺序区分的列表内容
+            标签组成:
+                <ol></ol> ==> 表示有序列表整体, 用来包裹li标签
+                <li></li> ==> 表示列表的每一项, 代表一行内容
+                显示特点 ==> 列表的每一项前都默认显示对应的序号
+                注意点:
+                    a. ol标签中只允许包含li标签
+                    b. li标签可以包含任意内容
+        3. 自定义列表:
+            在网页的底部导航中通常会使用自定义列表实现
+            标签组成:
+                <dl></dl> ==> 表示自定义列表整体, 用于包裹 dt / dd 标签
+                <dt></dt> ==> 表示自定义列表的主题
+                <dd></dd> ==> 表示自定义列表针对主题的每一项内容
+                显示特点 ==> dd 前会默认显示缩进效果
+                注意点:
+                    a. dl标签中只允许包含 dt / dd 标签
+                    b. dt / dd 标签可以包含任意内容
+-->
+<style>
+    ul {
+        /* 取消ul标签列表中默认的'●' 标识 */
+        list-style-type: none;
+    }
+
+    .img {
+        /* 设置ul列表中的内容横向排列 */
+        display: inline;
+    }
+    ol li {
+        font-size: 30px;
+    }
+    dl dd{
+        font-size: 30px;
+    }
+    dl dt{
+        font-size: 40px;
+    }
+</style>
+<body>
+    <!--定义无序列表 ==> ul 标签-->
+    <h1>ul 无序列表展示效果</h1>
+    <hr>
+    <ul>
+        <li class="img">
+            <img src="./Pic/picture/52137610771602924981664550537911.jpg" alt="图片加载失败" title="美女1" height="200">
+        </li>
+        <li class="img">
+            <img src="./Pic/picture/52146055006775045731664979362997.jpg" alt="图片加载失败" title="美女1" height="200">
+        </li>
+        <li class="img">
+            <img src="./Pic/picture/52382493984348468471664979260841.jpg" alt="图片加载失败" title="美女1" height="200">
+        </li>
+        <li class="img">
+            <img src="./Pic/picture/52416270984502005711663084066145.jpg" alt="图片加载失败" title="美女1" height="200">
+        </li>
+    </ul>
+    <!--定义有序列表 ==> ol 标签-->
+    <h1>ol 有序列表展示效果</h1>
+    <hr>
+    <ol>
+        <li style="color: yellow">python</li>
+        <li style="color: blue">java</li>
+        <li style="color: green">golang</li>
+        <li style="color: red">javascript</li>
+    </ol>
+    <!-- 定义自定义列表 ==> dl 标签 -->
+    <h1>dl 自定义列表展示效果</h1>
+    <hr>
+    <dl>
+        <dt>帮助中心</dt>
+        <dd>账户管理</dd>
+        <dd>购物指南</dd>
+        <dd>订单操作</dd>
+
+        <dt>服务支持</dt>
+        <dd>售后政策</dd>
+        <dd>自助服务</dd>
+        <dd>相关下载</dd>
+    </dl>
+</body>
+</html>

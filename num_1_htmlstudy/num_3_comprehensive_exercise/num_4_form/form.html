@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单训练</title>
+</head>
+<body>
+    <h1>青春不常在, 抓紧谈恋爱</h1>
+    <hr>
+    <!--创建表单域-->
+    <form action="http://localhost:8080" method="post">
+        <p>
+            昵称:
+            <input type="text" name="昵称" placeholder="请输入昵称:">
+        </p>
+        <p>
+            性别:
+            <label><input type="radio" name="sex" value="0" checked>男</label>
+            <label><input type="radio" name="sex" value="1">女</label>
+        </p>
+        <p>
+              所在城市:
+            <select name="city" id="city">
+                <option value="1" selected>郑州</option>
+                <option value="2">洛阳</option>
+                <option value="3">开封</option>
+                <option value="4">周口</option>
+                <option value="5">信阳</option>
+                <option value="6">安阳</option>
+                <option value="7">南阳</option>
+                <option value="8">濮阳</option>
+                <option value="9">三门峡</option>
+                <option value="10">平顶山</option>
+                <option value="11">济源</option>
+                <option value="12">鹤壁</option>
+                <option value="13">焦作</option>
+                <option value="14">许昌</option>
+                <option value="15">漯河</option>
+                <option value="16">驻马店</option>
+                <option value="17">商丘</option>
+                <option value="18">新乡</option>
+          </select>
+        </p>
+        <p>
+            婚姻状况:
+            <label><input type="radio" name="ststus" value="0">未婚</label>
+            <label><input type="radio" name="ststus" value="1">已婚</label>
+            <label><input type="radio" name="ststus" value="2">保密</label>
+        </p>
+        <p>
+            喜欢的类型:
+            <label><input type="checkbox" name="like" value="1">可爱</label>
+            <label><input type="checkbox" name="like" value="2">性感</label>
+            <label><input type="checkbox" name="like" value="3">御姐</label>
+            <label><input type="checkbox" name="like" value="4">萝莉</label>
+            <label><input type="checkbox" name="like" value="5">小鲜肉</label>
+            <label><input type="checkbox" name="like" value="6">大叔</label>
+        </p>
+        <p>
+            个人介绍:
+            <br>
+            <textarea name="data" cols="50" rows="10">请做个自我介绍...</textarea>
+        </p>
+        <h3>我承诺:</h3>
+        <ul>
+            <li>年满18岁、单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真诚的寻找另一半</li>
+        </ul>
+        <label><input type="checkbox" checked name="agreement" value="0">我同意所有条款</label>
+        <br>
+        <p>
+            <button type="submit" name="submit">免费注册</button>
+            <button type="reset" name="reset">重置所有数据</button>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>标签水平居中方法</title>
+	<style>
+		div {
+			width: 500px;
+			height: 500px;
+			background-color: pink;
+			font: italic bold 30px 微软雅黑;
+			/* 设置标签水平居中 */
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<!--
+	标签水平居中方法 ==> margin: 上下间距 左右间距:
+		作用: margin:0 auto ==> 可以使div, p, h等标签实现水平居中
+		注意点:
+			a. 如果需要让div, p, h(大盒子)水平居中, 直接给当前元素本真设置即可
+			b. margin: 0 auto 设置一般针对于固定宽度的盒子, 如果大盒子没有设置宽度, 会默认
+			   占满父元素的宽度
+-->
+<body>
+	<div>
+		这是一个div标签, 测试使用margin: 0 auto来实现 div 标签水平居中
+	</div>
+</body>
+</html>

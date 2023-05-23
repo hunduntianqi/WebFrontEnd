@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>并集选择器</title>
+    <style>
+        p,
+        div,
+        span,
+        h1{
+            font: italic 400 30px 楷书;
+        }
+        p {
+            color: yellow;
+        }
+        div {
+            color: blue;
+        }
+        span {
+            color: green;
+        }
+        h1 {
+            color: #ffa500;
+        }
+    </style>
+</head>
+<!--
+    并集选择器:
+        结构:
+            选择器1, 选择器2,...{
+                css属性名: 属性值;
+                ...
+            }
+        作用: 同时选择多组标签, 设置相同样式
+        注意点:
+            a. 并集选择器之间通过','分隔
+            b. 并集选择器的每组选择器可以是基础选择器或复合选择器
+            c. 并集选择器中的每组选择器通常一行写一个, 提高代码的可读性
+-->
+<body>
+    <p>这是一个 p 标签</p>
+    <div>这是一个 div 标签</div>
+    <span>这是一个 span 标签</span>
+    <h1>这是一个 h1 标签</h1>
+</body>
+</html>

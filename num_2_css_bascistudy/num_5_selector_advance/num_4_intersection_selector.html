@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交集选择器</title>
+    <style>
+        p.div_p{
+            /*选中class属性为'div_p'的p标签设置样式*/
+            font: italic 400 30px 楷书;
+            color: pink;
+        }
+    </style>
+</head>
+<!--
+    交集选择器:
+        结构:
+            选择器1选择器2...{
+                css属性名: 属性值;
+                ...
+            }
+        作用: 选中页面中同时满足多个选择器的标签设置样式
+        注意点:
+            a. 交集选择器中的选择器之间是紧挨着的, 没有东西分隔
+            b. 交集选择器中如果有标签选择器, 标签选择器必须写在最前面
+-->
+<body>
+    <div>
+        这是div标签的文本内容
+        <p class="div_p">这是div中嵌套的p标签</p>
+    </div>
+</body>
+</html>

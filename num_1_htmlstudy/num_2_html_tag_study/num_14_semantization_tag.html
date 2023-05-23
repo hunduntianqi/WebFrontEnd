@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>语义化标签</title>
+    <style>
+        div {
+            background-color: yellow;
+            width: 250px;
+            height: 50px;
+            align-content: center;
+        }
+        span {
+            font-family: 隶书;
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<!--
+    无语义布局标签:
+        实际开发会大量频繁的使用div和span这两个没有语义的布局标签
+        div 标签:
+            一行只显示一个, 独占一行
+        span 标签:
+            一行可以显示多个
+    有语义布局标签:
+        HTML5新版本提供的具有语义的布局标签, 一般在手机端网页开发中使用
+        header ==> 网页头部
+        nav ==> 网页导航
+        footer ==> 网页底部
+        aside ==> 网页侧边栏
+        section ==> 网页区块
+        article ==> 网页文章
+        注意点:
+            显示特点与div标签一致
+-->
+<body>
+    <div>
+        div ==> 无语义布局标签
+        <br>
+        <span>姓名:</span>
+        <span>年龄:</span>
+        <span>性别:</span>
+        <span>籍贯:</span>
+    </div>
+    <header>header ==> 网页头部布局标签</header>
+    <nav>nav ==> 网页导航布局标签</nav>
+    <aside>aside ==> 网页侧边栏布局标签</aside>
+    <section>section ==> 网页区块布局标签</section>
+    <article>article ==> 网页文章布局标签</article>
+    <footer>footer ==> 网页底部布局标签</footer>
+</body>
+</html>

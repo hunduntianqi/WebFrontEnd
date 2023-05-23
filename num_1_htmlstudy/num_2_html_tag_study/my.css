@@ -1,0 +1,47 @@
+table {
+    /*设置字体大小*/
+    font-size: 30px;
+    font-family: 隶书;
+    /*设置字体居中显示*/
+    text-align: center;
+    /*添加边框*/
+    border: 1px solid;
+}
+tr{
+    /*设置字体大小*/
+    font-size: 30px;
+    font-family: 隶书;
+    /*设置字体居中显示*/
+    text-align: center;
+    /*添加边框*/
+    border: 1px solid;
+}
+th {
+    color: blue;
+    background: beige;
+    /*设置字体大小*/
+    font-size: 30px;
+    font-family: 隶书;
+    /*设置字体居中显示*/
+    text-align: center;
+    /*添加边框*/
+    border: 1px solid;
+}
+td {
+    /*设置字体大小*/
+    font-size: 30px;
+    font-family: 隶书;
+    /*设置字体居中显示*/
+    text-align: center;
+    /*添加边框*/
+    border: 1px solid;
+}
+caption {
+    font-size: 30px;
+    font-family: 隶书;
+    /*设置字体居中显示*/
+    text-align: center;
+    /*添加边框*/
+    border: 2px solid;
+    height: 40px;
+}

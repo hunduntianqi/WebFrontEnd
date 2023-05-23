@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子代选择器</title>
+    <style>
+        div > a {
+            color: red;
+        }
+        p > a {
+            color: yellow;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<!--
+    子代选择器:
+        结构:
+            选择器1 > 选择器2 {
+                css属性名: 属性值;
+                ...
+            }
+        作用: 通过Html标签嵌套关系, 选择父元素子代中满足条件的元素
+        注意点:
+            a. 子代只包括儿子, 即与父元素相邻下一级标签
+            b. 子代选择器中, 选择器与选择器之间通过 '>' 隔开
+-->
+<body>
+    <div>
+        <a href="#">这是一个div标签直接嵌套的a 标签</a>
+        <p>
+            <a href="#">这是一个被div标签里面的p标签嵌套的a标签</a>
+        </p>
+    </div>
+</body>
+</html>

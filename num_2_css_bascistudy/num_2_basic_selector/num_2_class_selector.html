@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类选择器</title>
+    <style>
+        .one {
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 隶书;
+        }
+        .two {
+            background-color: blue;
+            width: 700px;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<!--
+    类选择器:
+        结构:
+            .class_name {
+                属性名: 属性值;
+                ...
+            }
+        作用:
+            通过类名, 找到页面中所有带这个类名的标签, 设置标签样式
+        注意点:
+            a. 所有标签都可以设置class属性, class属性的属性值就是类名
+            b. 类名可以由数字, 字母, 下划线, 中划线组成, 但不能以数字或中划线开头
+            c. 一个标签可以同时设置多个类名, 类名之间以空格隔开
+            d. 类名可以重复, 一个类选择器可以同时选中多个标签
+-->
+<body>
+    <div class="one two">类选择器, 设置字体颜色为红色, 隶书, 加粗, 30px</div>
+    <p class="one">p 标签通过类选择器设置样式</p>
+</body>
+</html>
